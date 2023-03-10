@@ -69,7 +69,6 @@ h1 {
     flex-basis: auto;
     justify-content: center;
     align-items: center;
-
 }
 
 .inner-container {
@@ -119,6 +118,7 @@ header {
 
 .hero-section {
     color: #FFFFFF;
+    position: relative;
 }
 
 .hero-section button {
@@ -129,8 +129,17 @@ header {
     box-shadow: 2px 4px 12px hsl(259, 72%, 30%);
     margin-bottom: 2rem;
     border: 1px solid var(--general-color-pink);
-;
 }
+
+.header-symbol-1 {
+    background-image: url("../assets/symbols/squiggle_line_stripe.svg");
+    position: absolute;
+    left: calc(50% - 40px);
+    bottom: 0px;
+    width: 80px;
+    height: 80px;
+}
+
 
 /* ---------------------- 4.2 Main ---------------------------- */
 /* --------------- 4.2.1 Introduction ------------------ */

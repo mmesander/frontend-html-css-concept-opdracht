@@ -52,10 +52,10 @@ rommeltje. Zorg daarom dat je onderstaande checklist afwerkt.
 - [x] Download de afbeeldingen uit deze repository. Maak een map `assets` aan en zet alle afbeeldingen hierin.
 - [x] Zet alvast een structuur klaar in commentaar in jouw CSS-bestand. Je kunt [deze structuur](#voorbeeld-css-structuur)
   gebruiken, maar voel je vrij om een eigen structuur te bedenken.
-- [ ] Maak een repository aan op www.GitHub.com voor jouw project.
-- [ ] Initialiseer Git in jouw project. Maak een commit en koppel daarna jouw repository aan dit project volgens de
+- [x] Maak een repository aan op www.GitHub.com voor jouw project.
+- [x] Initialiseer Git in jouw project. Maak een commit en koppel daarna jouw repository aan dit project volgens de
   instructies op GitHub. Tip: weet je niet meer hoe dit moet? Volg dan de stappen uit de video (Hfst 4.2 van de cursus Git) één voor één op.
-- [ ] Wanner dit is gelukt, maak je een feature-branch aan (`git checkout -b uitwerkingen`).  Op deze branch schrijf je jouw uitwerkingen, zodat deze later gemakkelijk kunnen worden nagekeken in een Pull Request.
+- [x] Wanner dit is gelukt, maak je een feature-branch aan (`git checkout -b uitwerkingen`).  Op deze branch schrijf je jouw uitwerkingen, zodat deze later gemakkelijk kunnen worden nagekeken in een Pull Request.
 
 ### 1.2 Stylingopzet
 

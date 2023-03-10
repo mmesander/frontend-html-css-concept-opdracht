@@ -21,7 +21,35 @@
 
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*border: 1px solid indianred;*/
+}
+
+:root {
+    --general-color-purple: #5722CD;
+    --general-color-blue: #4845E4;
+    --general-color-pink: #ED4385;
+    --general-color-black: #0C0C0C;
+    --specific-color-light-purple: #F2F0FF;
+    --specific-color-light-grey: #F3F6F9;
+    --specific-color-grey: #7A7A7A;
+}
+
 /* ------------------------------- 2. Typography ----------------------------------- */
+
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+
 /* ------------------------------- 3. Layout --------------------------------------- */
 /* ---------------------- 3.1 Reusables ----------------------- */
 /* ---------------------- 3.2 Specific ------------------------ */

@@ -74,7 +74,7 @@ h1 {
 
 .inner-container {
     flex-basis: auto;
-    max-width: 525px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     margin: 0 1rem;
@@ -84,6 +84,10 @@ h1 {
     gap: 1rem;
     padding: 4rem 0 6rem 0;
 
+}
+
+h4 {
+    color: var(--general-color-purple);
 }
 
 /* ---------------------- 3.2 Specific ------------------------ */
@@ -130,6 +134,16 @@ header {
 
 /* ---------------------- 4.2 Main ---------------------------- */
 /* --------------- 4.2.1 Introduction ------------------ */
+
+.introduction a {
+    text-decoration: none;
+    color: var(--general-color-purple);
+}
+
+.introduction p {
+    margin-top: 2rem;
+}
+
 /* --------------- 4.2.2 Projects ---------------------- */
 /* --------------- 4.2.3 Services ---------------------- */
 /* ---------------------- 4.3 Footer -------------------------- */
@@ -152,5 +166,9 @@ header {
 
     .nav-bar a {
         font-weight: normal;
+    }
+
+    .hero-section button {
+        padding: 1rem 2rem;
     }
 }

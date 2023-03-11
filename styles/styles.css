@@ -82,7 +82,16 @@ h1 {
     text-align: center;
     gap: 1rem;
     padding: 4rem 0 6rem 0;
+}
 
+button {
+    background-color: var(--general-color-pink);
+    color: #FFFFFF;
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    box-shadow: 2px 4px 12px hsl(259, 72%, 30%);
+    margin-bottom: 2rem;
+    border: 1px solid var(--general-color-pink);
 }
 
 /* ---------------------- 3.2 Specific ------------------------ */
@@ -120,16 +129,6 @@ header {
 .hero-section {
     color: #FFFFFF;
     position: relative;
-}
-
-.hero-section button {
-    background-color: var(--general-color-pink);
-    color: #FFFFFF;
-    padding: 1rem 1.5rem;
-    border-radius: 30px;
-    box-shadow: 2px 4px 12px hsl(259, 72%, 30%);
-    margin-bottom: 2rem;
-    border: 1px solid var(--general-color-pink);
 }
 
 .header-symbol {
@@ -276,6 +275,17 @@ main a {
 }
 
 /* ---------------------- 4.3 Footer -------------------------- */
+
+.footer-section {
+    color: #FFFFFF;
+    background: rgb(72,69,228);
+    background: linear-gradient(90deg, rgba(72,69,228,1) 0%, rgba(87,34,205,1) 100%);
+}
+
+.footer-section p {
+    font-size: .8rem;
+}
+
 /* --------------- 4.3.1 Form -------------------------- */
 /* --------------- 4.3.2 Footer Bar -------------------- */
 /* ------------------------------- 5. Media Queries -------------------------------- */

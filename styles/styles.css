@@ -142,18 +142,60 @@ header {
 
 
 /* ---------------------- 4.2 Main ---------------------------- */
-/* --------------- 4.2.1 Introduction ------------------ */
 
-.introduction a {
+main a {
     text-decoration: none;
     color: var(--general-color-purple);
 }
+
+/* --------------- 4.2.1 Introduction ------------------ */
 
 .introduction p {
     margin-top: 2rem;
 }
 
 /* --------------- 4.2.2 Projects ---------------------- */
+
+.outer-container-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inner-container-projects {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    align-items: center;
+    margin: 0 1rem;
+    max-width: 500px;
+    flex-wrap: wrap-reverse;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-grow: 1;
+    gap: 2rem;
+}
+
+.projects a {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .75rem;
+}
+
+.projects img {
+    width: 100%;
+}
+
+.image-wrapper {
+    flex-basis: auto;
+}
+
+
 /* --------------- 4.2.3 Services ---------------------- */
 /* ---------------------- 4.3 Footer -------------------------- */
 /* --------------- 4.3.1 Form -------------------------- */
@@ -179,5 +221,18 @@ header {
 
     .hero-section button {
         padding: 1rem 2rem;
+    }
+
+    .inner-container-projects {
+        flex-wrap: nowrap;
+        max-width: 1000px;
+    }
+
+    .text-wrapper {
+        flex-basis: 35%;
+        min-width: 350px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        margin-left: 1rem;
     }
 }

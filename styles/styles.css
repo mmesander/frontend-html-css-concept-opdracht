@@ -160,7 +160,9 @@ main a {
 .outer-container-projects {
     display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
+    padding: 4rem 0 6rem 0;
+    background-color: var(--specific-color-light-grey);
 }
 
 .inner-container-projects {
@@ -257,7 +259,7 @@ main a {
         flex-shrink: 0;
         flex-grow: 0;
         margin-left: 1rem;
-        /*margin-right: 4rem;*/
     }
 }
+
 

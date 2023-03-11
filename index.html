@@ -126,11 +126,22 @@
 </main>
 
 <footer>
-    <section class="footer-section outer-container">
-        <div class="inner-container">
+    <section class="footer-section outer-container-footer">
+        <div class="inner-container-footer">
             <h2>Let's work together</h2>
             <p>Have a question? Need a quote? Let us know!</p>
-            <form></form>
+            <form class="form-container">
+                <label for="name-field" class="form-title">Name</label>
+                <input type="text" name="name" id="name-field" placeholder="Name">
+
+                <label for="email-field" class="form-title">Email</label>
+                <input type="email" name="email" id="email-field" placeholder="Email">
+
+                <label for="message-field" class="form-title">Message</label>
+                <textarea name="message" id="message-field" cols="30" rows="10" placeholder="Message"></textarea>
+
+                <button type="submit">Send</button>
+            </form>
         </div>
     </section>
 </footer>

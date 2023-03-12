@@ -486,11 +486,6 @@ main a {
         font-size: 9rem;
         top: 0;
     }
-
-    .outer-container-services::after {
-        font-size: 6rem;
-        top: 1.75rem;
-    }
 }
 
 @media screen and (min-width: 700px) {

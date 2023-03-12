@@ -94,6 +94,28 @@ button {
     border: 1px solid var(--general-color-pink);
 }
 
+button:hover {
+    cursor: pointer;
+}
+
+.triangle-container-top {
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    border-bottom: 30px solid yellow;
+    border-right: 97.5vw solid transparent;
+}
+
+.triangle-container-bottom {
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    border-left: 98.5vw solid transparent;
+    border-top: 30px solid #FFFFFF;
+}
+
 /* ---------------------- 3.2 Specific ------------------------ */
 
 h4 {
@@ -140,6 +162,12 @@ header {
     height: 80px;
 }
 
+.hero-section .triangle-container-top {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 35px solid #FFFFFF;
+}
 
 /* ---------------------- 4.2 Main ---------------------------- */
 
@@ -154,6 +182,17 @@ main a {
     margin: 2rem 0;
 }
 
+.introduction {
+    position: relative;
+}
+
+.introduction .triangle-container-top {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 35px solid var(--specific-color-light-grey);
+}
+
 /* --------------- 4.2.2 Projects ---------------------- */
 
 .outer-container-projects {
@@ -161,6 +200,7 @@ main a {
     flex-direction: column;
     align-items: center;
     padding: 4rem 0 4rem 0;
+    position: relative;
     background-color: var(--specific-color-light-grey);
 }
 
@@ -207,6 +247,13 @@ main a {
     height: .3rem;
 }
 
+.projects .triangle-container-top {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 30px solid #FFFFFF;
+}
+
 /* --------------- 4.2.3 Services ---------------------- */
 
 .outer-container-services {
@@ -248,6 +295,7 @@ main a {
 .article-container p {
     font-size: .67rem;
     padding-top: 1rem;
+    color: var(--specific-color-grey);
 }
 
 #icon-web-design {
@@ -280,10 +328,20 @@ main a {
     color: #FFFFFF;
     background: rgb(72,69,228);
     background: linear-gradient(90deg, rgba(72,69,228,1) 0%, rgba(87,34,205,1) 100%);
+    position: relative;
 }
 
 .footer-section p {
     font-size: .85rem;
+}
+
+.footer-section .triangle-container-bottom {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+
 }
 
 /* --------------- 4.3.1 Form -------------------------- */

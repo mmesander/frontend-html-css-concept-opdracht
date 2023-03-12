@@ -59,14 +59,14 @@ rommeltje. Zorg daarom dat je onderstaande checklist afwerkt.
 
 ### 1.2 Stylingopzet
 
-- [ ] Declareer alvast een CSS-reset in jouw CSS-bestand. *Pssst*: vergeet jouw stylesheet niet te koppelen aan
+- [x] Declareer alvast een CSS-reset in jouw CSS-bestand. *Pssst*: vergeet jouw stylesheet niet te koppelen aan
   jouw `index.html`.
 
-- [ ] De gebruikte fonts in de designs zijn `Merriweather` voor de headings en `Roboto` voor normale tekst. Deze fonts kun
+- [x] De gebruikte fonts in de designs zijn `Merriweather` voor de headings en `Roboto` voor normale tekst. Deze fonts kun
   je gratis vinden op Google Fonts, zorg er alvast voor dat je deze importeert in jouw CSS-bestand en instelt
   als `font-family`.
 
-- [ ] De ontwerper heeft de gebruikte kleuren voor ons
+- [x] De ontwerper heeft de gebruikte kleuren voor ons
   aangeleverd: [bekijk het kleurenpalet hier](https://coolors.co/5722cd-4b49e8-f2f0ff-ed4385-0c0c0c). Het is handig om
   deze kleuren bovenaan jouw CSS-bestand te plakken, zodat je ze gemakkelijk kunt kopiëren wanneer je ze nodig
   hebt. *Tip*: je kunt ook gebruik maken van

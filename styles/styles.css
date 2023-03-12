@@ -184,6 +184,7 @@ main a {
 
 .introduction {
     position: relative;
+    padding-top: 2rem;
 }
 
 .introduction .triangle-container-top {
@@ -193,15 +194,28 @@ main a {
     border-bottom: 35px solid var(--specific-color-light-grey);
 }
 
+.introduction::after {
+    content: "hello";
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    text-transform: lowercase;
+    font-weight: bolder;
+    color: var(--specific-color-light-purple);
+    font-size: 7rem;
+    z-index: -1;
+ }
+
 /* --------------- 4.2.2 Projects ---------------------- */
 
 .outer-container-projects {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 0 4rem 0;
+    padding: 6rem 0 4rem 0;
     position: relative;
     background-color: var(--specific-color-light-grey);
+    z-index: -2;
 }
 
 .inner-container-projects {
@@ -213,6 +227,7 @@ main a {
     max-width: 500px;
     gap: 0;
     flex-wrap: wrap-reverse;
+    position: relative;
 }
 
 .text-wrapper {
@@ -254,13 +269,27 @@ main a {
     border-bottom: 30px solid #FFFFFF;
 }
 
+.projects::after {
+    content: "work";
+    display: inline-block;
+    position: absolute;
+    top: .5rem;
+    text-transform: lowercase;
+    font-weight: bolder;
+    color: #FFFFFF;
+    font-size: 7rem;
+    z-index: -1;
+}
+
+
 /* --------------- 4.2.3 Services ---------------------- */
 
 .outer-container-services {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 6rem 4rem 4rem 4rem;
+    padding: 7rem 4rem 4rem 4rem;
+    position: relative;
 }
 
 .inner-container-services {
@@ -283,6 +312,7 @@ main a {
     padding: 1.5rem;
     border: 1px solid var(--general-color-purple);
     box-shadow: 0 5px 10px lightgrey;
+    background-color: #FFFFFF;
 }
 
 .icon-wrapper {
@@ -320,6 +350,18 @@ main a {
 
 #icon-copywriting {
     background-image: url("../assets/icons/icon_copywriting.svg");
+}
+
+.outer-container-services::after {
+    content: "services";
+    display: inline-block;
+    position: absolute;
+    top: 3rem;
+    text-transform: lowercase;
+    font-weight: bolder;
+    color: var(--specific-color-light-purple);
+    font-size: 4.5rem;
+    z-index: -2;
 }
 
 /* ---------------------- 4.3 Footer -------------------------- */
@@ -428,7 +470,37 @@ main a {
     }
 }
 
+@media screen and (min-width: 500px) {
+    .introduction::after {
+        font-size: 9rem;
+    }
 
+    .projects::after {
+        font-size: 9rem;
+        top: 0;
+    }
+
+    .outer-container-services::after {
+        font-size: 6rem;
+        top: 1.75rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .introduction::after {
+        font-size: 11rem;
+    }
+
+    .projects::after {
+        font-size: 11rem;
+        top: -1rem;
+    }
+
+    .outer-container-services::after {
+        font-size: 8rem;
+        top: 0;
+    }
+}
 
 @media screen and (min-width: 768px) {
     html {
@@ -468,6 +540,24 @@ main a {
     .article-container p {
         font-size: .63rem;
     }
+
+    .introduction::after {
+        font-size: 16rem;
+        top: .5rem;
+    }
+
+    .projects::after {
+        font-size: 16rem;
+        top: -2rem;
+    }
 }
 
-
+@media screen and (min-width: 1023px) {
+    .outer-container-services {
+        padding-top: 9rem;
+    }
+    .outer-container-services::after {
+        font-size: 11rem;
+        top: 0;
+    }
+}

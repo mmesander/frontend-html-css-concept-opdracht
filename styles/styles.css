@@ -21,19 +21,549 @@
 
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*border: 1px solid indianred;*/
+}
+
+:root {
+    --general-color-purple: #5722CD;
+    --general-color-blue: #4845E4;
+    --general-color-pink: #ED4385;
+    --general-color-black: #0C0C0C;
+    --specific-color-light-purple: #F2F0FF;
+    --specific-color-light-grey: #F3F6F9;
+    --specific-color-grey: #7A7A7A;
+}
+
+body {
+    min-height: 100vh;
+}
+
+
+
 /* ------------------------------- 2. Typography ----------------------------------- */
+
+html {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
 /* ------------------------------- 3. Layout --------------------------------------- */
 /* ---------------------- 3.1 Reusables ----------------------- */
+
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container {
+    flex-basis: auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 4rem 0 6rem 0;
+}
+
+button {
+    background-color: var(--general-color-pink);
+    color: #FFFFFF;
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    box-shadow: 2px 4px 12px hsl(259, 72%, 30%);
+    margin-bottom: 2rem;
+    border: 1px solid var(--general-color-pink);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.triangle-container-top {
+    height: 0;
+    width: 0;
+    border-bottom: 30px solid yellow;
+    border-right: 97.5vw solid transparent;
+}
+
+.triangle-container-bottom {
+    height: 0;
+    width: 0;
+    border-left: 97.5vw solid transparent;
+    border-top: 30px solid #FFFFFF;
+}
+
 /* ---------------------- 3.2 Specific ------------------------ */
+
+h4 {
+    color: var(--general-color-purple);
+}
+
 /* ------------------------------- 4. Areas ---------------------------------------- */
 /* ---------------------- 4.1 Header -------------------------- */
+
+header {
+    background-image: url("../assets/images/noise-texture.png"), linear-gradient(90deg, rgba(72,69,228,1) 15%, rgba(87,34,205,1) 90%);
+}
+
 /* --------------- 4.1.1 Navigation Bar ---------------- */
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 1rem 2rem;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
 /* --------------- 4.1.2 Hero Section ------------------ */
+
+.hero-section {
+    color: #FFFFFF;
+    position: relative;
+}
+
+.header-symbol {
+    background-image: url("../assets/symbols/squiggle_line_stripe.svg");
+    position: absolute;
+    left: calc(50% - 40px);
+    bottom: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.hero-section .triangle-container-top {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 35px solid #FFFFFF;
+}
+
 /* ---------------------- 4.2 Main ---------------------------- */
+
+main a {
+    text-decoration: none;
+    color: var(--general-color-purple);
+}
+
 /* --------------- 4.2.1 Introduction ------------------ */
+
+.introduction p {
+    margin: 2rem 0;
+}
+
+.introduction {
+    position: relative;
+    padding-top: 2rem;
+}
+
+.introduction .triangle-container-top {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 35px solid var(--specific-color-light-grey);
+}
+
+.introduction::after {
+    content: "hello";
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    text-transform: lowercase;
+    font-weight: bolder;
+    color: var(--specific-color-light-purple);
+    font-size: 7rem;
+    z-index: -1;
+ }
+
 /* --------------- 4.2.2 Projects ---------------------- */
+
+.outer-container-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 0 4rem 0;
+    position: relative;
+    background-color: var(--specific-color-light-grey);
+    z-index: 0;
+}
+
+.inner-container-projects {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    align-items: center;
+    margin: 0 1rem;
+    max-width: 500px;
+    gap: 0;
+    flex-wrap: wrap-reverse;
+    position: relative;
+    z-index: 1;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-grow: 1;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.projects a {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .75rem;
+    z-index: 1;
+    /*display: inline;*/
+}
+
+.projects a::after {
+    content: "";
+    display: inline-block;
+    width: 3%;
+    height: 1px;
+    background-color: var(--general-color-purple);
+    transition: width .35s ease-in-out;
+}
+
+.projects a:hover::after {
+    width: 15%;
+}
+
+.projects a:hover {
+    cursor: pointer;
+}
+
+.projects img {
+    width: 100%;
+    box-shadow: 0 1rem 1.5rem lightgrey;
+}
+
+.image-wrapper {
+    flex-basis: auto;
+}
+
+.project-symbol {
+    background-image: url("../assets/symbols/squiggle_line.svg");
+    background-size: cover;
+    width: 2.25rem;
+    height: .3rem;
+}
+
+.projects .triangle-container-top {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 30px solid #FFFFFF;
+}
+
+.projects::after {
+    content: "work";
+    display: inline-block;
+    position: absolute;
+    top: .5rem;
+    text-transform: lowercase;
+    font-weight: bolder;
+    color: #FFFFFF;
+    font-size: 7rem;
+    z-index: -1;
+}
+
+
 /* --------------- 4.2.3 Services ---------------------- */
+
+.outer-container-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 4rem 4rem 4rem;
+    position: relative;
+}
+
+.inner-container-services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    max-width: 900px;
+    gap: 1.5rem;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    width: 225px;
+    height: 225px;
+    position: relative;
+    padding: 1.5rem;
+    border: 1px solid var(--general-color-purple);
+    box-shadow: 0 5px 10px lightgrey;
+    background-color: #FFFFFF;
+}
+
+.icon-wrapper {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: cover;
+    margin-bottom: .5rem;
+}
+
+.article-container p {
+    font-size: .67rem;
+    padding-top: 1rem;
+    color: var(--specific-color-grey);
+}
+
+#icon-web-design {
+    background-image: url("../assets/icons/icon_web-design.svg");
+}
+
+#icon-web-development {
+    background-image: url("../assets/icons/icon_web-development.svg");
+}
+
+#icon-ux {
+    background-image: url("../assets/icons/icon_ux.svg");
+}
+
+#icon-design {
+    background-image: url("../assets/icons/icon_graphic-design.svg");
+}
+
+#icon-seo {
+    background-image: url("../assets/icons/icon_seo.svg");
+}
+
+#icon-copywriting {
+    background-image: url("../assets/icons/icon_copywriting.svg");
+}
+
+.outer-container-services::after {
+    content: "services";
+    display: inline-block;
+    position: absolute;
+    top: 3rem;
+    text-transform: lowercase;
+    font-weight: bolder;
+    color: var(--specific-color-light-purple);
+    font-size: 4.5rem;
+    z-index: -2;
+}
+
 /* ---------------------- 4.3 Footer -------------------------- */
+
+.footer-section {
+    color: #FFFFFF;
+    background-image: url("../assets/images/noise-texture.png"), linear-gradient(90deg, rgba(72,69,228,1) 15%, rgba(87,34,205,1) 90%);
+    position: relative;
+}
+
+.footer-section p {
+    font-size: .85rem;
+}
+
+.footer-section .triangle-container-bottom {
+    position: relative;
+    top: 0;
+    right: -10px;
+}
+
 /* --------------- 4.3.1 Form -------------------------- */
+
+.outer-container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    width: auto;
+}
+
+.inner-container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    gap: 1rem;
+    padding: 4rem 0 2rem 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-container button {
+    margin-top: 2rem;
+    width: 10rem;
+    align-self: center;
+}
+
+.form-title {
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+#email-field, #name-field, #message-field {
+    padding: .75rem;
+    border: transparent;
+    border-radius: 3px;
+    font-size: .8rem;
+}
+
+#email-field, #name-field {
+    margin-bottom: 1rem;
+}
+
 /* --------------- 4.3.2 Footer Bar -------------------- */
+
+.outer-container-footer-bar {
+    background-color: var(--general-color-black);
+    color: #FFFFFF;
+}
+
+.inner-container-footer-bar {
+    font-size: .75rem;
+    text-align: center;
+    padding: 1rem;
+}
+
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media screen and (min-width: 400px) {
+    html {
+        font-size: 16px;
+    }
+
+    .nav-bar {
+        justify-content: flex-end;
+        gap: 2.5rem;
+        padding-right: 2rem;
+    }
+
+    .article-container {
+        height: 275px;
+        width: 275px;
+    }
+
+    .article-container p {
+        font-size: .75rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .introduction::after {
+        font-size: 9rem;
+    }
+
+    .projects::after {
+        font-size: 9rem;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .introduction::after {
+        font-size: 11rem;
+    }
+
+    .projects::after {
+        font-size: 11rem;
+        top: -1rem;
+    }
+
+    .outer-container-services::after {
+        font-size: 8rem;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+
+    .nav-bar a {
+        font-weight: normal;
+    }
+
+    .hero-section button {
+        padding: 1rem 2rem;
+    }
+
+    .outer-container-projects {
+        gap: 3rem;
+    }
+
+    .inner-container-projects {
+        flex-wrap: nowrap;
+        max-width: 1000px;
+        gap: 4rem;
+    }
+
+    .inner-container-projects:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .text-wrapper {
+        flex-basis: 35%;
+        min-width: 350px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        margin-left: 1rem;
+    }
+
+    .article-container p {
+        font-size: .63rem;
+    }
+
+    .introduction::after {
+        font-size: 16rem;
+        top: .5rem;
+    }
+
+    .projects::after {
+        font-size: 16rem;
+        top: -2rem;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .outer-container-services {
+        padding-top: 9rem;
+    }
+    .outer-container-services::after {
+        font-size: 11rem;
+        top: 0;
+    }
+}
